@@ -1,15 +1,17 @@
 <div class="flex flex-col w-full justify-center items-center">
 
+  <%= render 'layouts/mobile', class: "relative z-10" %>
+
   <div class="bg-[url('bkg.webp')] absolute z-0 -top-[195px] right-0 bg-no-repeat bg-cover w-[117vw] h-[136vh] min-[1500px]:w-[105vw] min-[1500px]:h-[101vh]"></div>
 
   <%= image_tag 'front.png', alt: 'City background', class: "w-full relative z-10 -mt-[35px]" %>
 
-  <div class="flex gap-20 pt-10 z-10">
+  <div class="flex items-center px-5 lg:px-0 flex-col lg:flex-row gap-5 xl:gap-20 pt-10 z-10">
     <div class="flex flex-col gap-[0.5 rem]">
       <h2 class="text-[1.37rem] font-thin">Your resource for homes and real estate in</h2>
       <h3 class="text-[4rem] font-bold">Atlanta, GA</h3>
     </div>
-    <p class="w-[48vw] pt-5 leading-6 text-[0.875rem]">The heart of downtown is swimming with exciting nightlife, world-famous attractions, and historic landmarks; the surrounding neighborhoods offer unique, local businesses that reflect the individual character of each area. In the midst of all the urban city activities, Atlanta real estate is also surrounded by a variety of parks, gardens, and green spaces. When it comes to <span class="text-[#01576E] underline">Georgia Real Estate</span> in an active city, it doesn’t get more vibrant than Atlanta.</p>
+    <p class="lg:w-[48vw] lg:pt-5 leading-6 text-[0.875rem]">The heart of downtown is swimming with exciting nightlife, world-famous attractions, and historic landmarks; the surrounding neighborhoods offer unique, local businesses that reflect the individual character of each area. In the midst of all the urban city activities, Atlanta real estate is also surrounded by a variety of parks, gardens, and green spaces. When it comes to <span class="text-[#01576E] underline">Georgia Real Estate</span> in an active city, it doesn’t get more vibrant than Atlanta.</p>
   </div>
 
   <%= render 'layouts/search', class: "relative z-10" %>
