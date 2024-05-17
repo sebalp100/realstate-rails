@@ -1,25 +1,23 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+import { fontFamily as _fontFamily } from 'tailwindcss/defaultTheme'
 
-module.exports = {
-  content: [
-    './public/*.html',
-    './app/helpers/**/*.rb',
-    './app/javascript/**/*.js',
-    './app/views/**/*',
-  ],
-  theme: {
-    extend: {
-      fontFamily: {
-        inter: ['Inter', ...defaultTheme.fontFamily.sans],
-      },
-      backgroundImage: {
-        'hero-pattern': "url('bkg.png')",
-      },
+export const content = [
+  './public/*.html',
+  './app/helpers/**/*.rb',
+  './app/javascript/**/*.js',
+  './app/views/**/*',
+]
+export const theme = {
+  extend: {
+    fontFamily: {
+      inter: ['Inter', ..._fontFamily.sans],
+    },
+    backgroundImage: {
+      'hero-pattern': "url('bkg.png')",
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/container-queries'),
-  ]
 }
+export const plugins = [
+  require('@tailwindcss/forms'),
+  require('@tailwindcss/typography'),
+  require('@tailwindcss/container-queries'),
+]
