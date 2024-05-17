@@ -1,17 +1,17 @@
-<div class="w-full px-[15vw] bg-[#86B6B9] font-inter">
-  <div class="flex justify-center columns-3 pt-14">
+<div class="w-full bg-[#86B6B9] font-inter flex flex-col justify-center items-center">
+  <div class="flex min-[576px]:max-w-[980px] min-[1500px]:max-w-[1100px] gap-20 lg:gap-4 justify-center flex-wrap lg:flex-nowrap columns-2 lg:columns-3 pt-14">
     <div class="w-[16.6%] pr-[70px]">
       <%= image_tag 'logo-footer2.svg', alt: 'EZ Home logo', class: "max-w-[106px]" %>
     </div>
-    <div class="flex flex-col mr-[10px] w-[50%] basis-auto">
+    <div class="flex flex-col mr-[10px] w-[50%] sm:w-[60%] basis-auto">
       <h2 class="text-[44px] leading-10 text-white max-w-460px font-medium pb-10">A better way to discover real state</h2>
-      <div class="flex gap-4 pb-6">
+      <div class="flex flex-wrap sm:flex-nowrap gap-4 pb-6">
         <p>Find a Home</p>
         <p>Sell</p>
         <p>Where to Live</p>
         <p>Neighborhoods</p>
       </div>
-      <div class="flex gap-5 text-[0.72rem] min-[1520px]:text-[0.8rem] pb-6">
+      <div class="flex flex-wrap sm:flex-nowrap gap-5 text-[0.72rem] min-[1520px]:text-[0.8rem] pb-6">
         <p>Blog</p>
         <p>Favorites</p>
         <p>Saved Searches</p>
@@ -19,7 +19,7 @@
         <p>About EZ Home Search</p>
       </div>
     </div>
-    <div class="flex flex-col text-lg w-[50%] pl-[60px] basis-auto">
+    <div class="flex flex-col text-lg w-[81%] lg:w-[50%] lg:pl-[60px] basis-auto">
       <p>3541 Fountain Lane</p>
       <p>Myrtle Beach, SC 29577</p>
       <p>(843) 310-6220</p>
@@ -35,147 +35,163 @@
       </div>
     </div>
   </div>
-  <span class="bg-white h-2"></span>
-  <h4>Locations</h4>
-  <div class="xl:px-[15vw] columns-1 md:columns-2 lg:columns-3 xl:columns-4 underline">
-    <div class="label break-inside-avoid font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/AR">Arkansas</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/northwest-ar">Northwest Arkansas</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/AZ">Arizona</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/phoenix-az">Phoenix</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/CO">Colorado</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/boulder-co">Boulder</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/denver-co">Denver</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/CT">Connecticut</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/fairfield-ct">Fairfield</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/hartford-ct">Hartford</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/litchfield-ct">Litchfield</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/new-haven-ct">New Haven</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/new-london-ct">New London</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/windham-ct">Windham</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/DC">District Of Columbia</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/washington-dc">Washington</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/DE">Delaware</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/dover-de">Dover</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/seaford-de">Seaford</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/FL">Florida</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/cape-coral-fort-myers-fl">Cape Coral/Fort Myers</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/daytona-beach-ormond-beach-fl">Daytona Beach - Ormond Beach</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/fort-lauderdale-fl">Fort Lauderdale</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/gainesville-fl">Gainesville</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/jacksonville-fl">Jacksonville</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/lakeland-winte-rhaven-fl">Lakeland - Winter Haven</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/miami-fl">Miami</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/naples-marco-island-fl">Naples-Marco Island</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/ocala-fl">Ocala</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/okeechobee-fl">Okeechobee</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/orlando-fl">Orlando</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/palm-bay-melbourne-fl">Palm Bay-Melbourne</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/palm-beach-fl">Palm Beach</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/palm-coast-fl">Palm Coast</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/panama-city-fl">Panama City</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/pensacola-fl">Pensacola </a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/port-st-lucie-fl">Port St Lucie</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/punta-gorda-fl">Punta Gorda</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/sarasota-fl">Sarasota</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/sebastian-vero-beach-fl">Sebastian - Vero Beach</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/sebring-fl">Sebring</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/st-petersburg-fl">St Petersburg</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/tallahassee-fl">Tallahassee</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/tampa-fl">Tampa</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/GA">Georgia</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/athens--ga">Athens </a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/atlanta-metro-ga">Atlanta Metro</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/augusta-ga">Augusta</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/columbus--ga">Columbus </a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/lagrange-ga">LaGrange</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/macon-ga">Macon</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/savannah-ga">Savannah</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/valdosta-ga">Valdosta</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/warner-robins-ga">Warner Robins</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/ID">Idaho</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/idaho-falls-id">Idaho Falls</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/kootenai-id">Kootenai</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/IN">Indiana</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/northwest-in">Northwest Indiana</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/MD">Maryland</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/baltimore-md">Baltimore</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/cambridge-md">Cambridge</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/cumberland-md">Cumberland</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/easton-md">Easton</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/lexington-park-md">Lexington Park</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/ocean-pines-md">Ocean Pines</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/salisbury-md">Salisbury</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/NC">North Carolina</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/asheville-nc">Asheville</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/boone-nc">Boone</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/charlotte-nc">Charlotte</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/durham-chapel-hill-nc">Durham / Chapel Hill</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/fayetteville-nc">Fayetteville</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/greensboro-nc">Greensboro</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/greenville-nc">Greenville</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/hickory-nc">Hickory</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/jacksonville-nc">Jacksonville</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/lumberton-nc">Lumberton</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/new-bern-nc">New Bern</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/outer-banks-nc">Outer Banks</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/pinehurst-southern-pines-nc">Pinehurst-Southern Pines</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/raleigh-nc">Raleigh</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/roanoke-rapids-nc">Roanoke Rapids</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/rocky-mount-nc">Rocky Mount</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/sanford-nc">Sanford</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/wilmington-nc">Wilmington</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/wilson-nc">Wilson</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/winston-salem-nc">Winston-Salem</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/NJ">New Jersey</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/atlantic-city-nj">Atlantic City</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/newark-nj">Newark</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/trenton-nj">Trenton</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/vineland-nj">Vineland</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/NV">Nevada</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/las-vegas-nv">Las Vegas</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/washoe-nv">Reno</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/OH">Ohio</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/cleveland-oh">Cleveland</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/PA">Pennsylvania</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/allentown-pa">Allentown</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/harrisburg-carlisle-pa">Harrisburg-Carlisle</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/philadelphia-pa">Philadelphia</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/pittsburgh-pa">Pittsburgh</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/reading-pa">Reading</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/scranton-pa">Scranton</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/SC">South Carolina</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/aiken-north-augusta-sc">Aiken-North Augusta</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/charleston-sc">Charleston</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/columbia-sc">Columbia</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/florence-sc">Florence</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/georgetown-sc">Georgetown</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/greenville-sc">Greenville</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/greenwood-sc">Greenwood</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/hilton-head-sc">Hilton Head</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/myrtle-beach-sc">Myrtle Beach</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/seneca-sc">Seneca</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/spartanburg-sc">Spartanburg</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/sumter-sc">Sumter</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/TN">Tennessee</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/chattanooga-tn">Chattanooga</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/jackson-tn">Jackson</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/knoxville-tn">Knoxville</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/memphis-tn">Memphis</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/TX">Texas</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/galveston-tx">Galveston</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/houston-tx">Houston</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/VA">Virginia</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/albemarle-va">Albemarle</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/charlottesville-va">Charlottesville</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/lynchburg-va">Lynchburg</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/northern-virgina-va">Northern Virgina</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/richmond-va">Richmond</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/roanoke-va">Roanoke</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/virginia-beach-norfolk-newport-news-va">Virginia Beach-Norfolk-Newport News</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/WA">Washington</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/spokane-wa">Spokane</a></div>
-    <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><a href="https://www.ezhomesearch.com/WV">West Virginia</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/morgantown-wv">Morgantown</a></div>
-    <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><a class="button-text button-text--alt" href="/parkersburg-wv">Parkersburg</a></div>
+  <div class="lg:ml-[16.6%] border-t-2 border-white mx-4 mt-10">
+    <h4 class="text-xl font-bold pb-4 pt-10">Locations</h4>
+    <div class="columns-1 min-[576px]:columns-2 md:columns-3 xl:columns-4 underline">
+      <div class="label break-inside-avoid font-bold break-inside-avoid-page text-[0.75rem] uppercase">
+        <p>Arkansas</p>
+      </div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Northwest Arkansas</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Arizona</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Phoenix</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Colorado</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Boulder</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Denver</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Connecticut</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Fairfield</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Hartford</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Litchfield</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >New Haven</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p>New London</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Windham</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>District Of Columbia</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Washington</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Delaware</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Dover</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Seaford</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Florida</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Cape Coral/Fort Myers</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Daytona Beach - Ormond Beach</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Fort Lauderdale</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Gainesville</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Jacksonville</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Lakeland - Winter Haven</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Miami</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Naples-Marco Island</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Ocala</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Okeechobee</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Orlando</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Palm Bay-Melbourne</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Palm Beach</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Palm Coast</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Panama City</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Pensacola </p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Port St Lucie</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Punta Gorda</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Sarasota</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Sebastian - Vero Beach</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Sebring</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >St Petersburg</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Tallahassee</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Tampa</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Georgia</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Athens </p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Atlanta Metro</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Augusta</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Columbus </p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >LaGrange</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Macon</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Savannah</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Valdosta</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Warner Robins</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Idaho</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Idaho Falls</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Kootenai</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Indiana</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Northwest Indiana</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Maryland</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Baltimore</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Cambridge</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Cumberland</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Easton</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Lexington Park</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Ocean Pines</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Salisbury</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>North Carolina</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Asheville</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Boone</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Charlotte</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Durham / Chapel Hill</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Fayetteville</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Greensboro</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Greenville</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Hickory</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Jacksonville</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Lumberton</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >New Bern</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Outer Banks</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Pinehurst-Southern Pines</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Raleigh</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Roanoke Rapids</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Rocky Mount</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Sanford</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Wilmington</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Wilson</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Winston-Salem</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>New Jersey</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Atlantic City</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Newark</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Trenton</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Vineland</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Nevada</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Las Vegas</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Reno</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Ohio</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Cleveland</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Pennsylvania</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Allentown</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Harrisburg-Carlisle</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Philadelphia</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Pittsburgh</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Reading</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Scranton</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>South Carolina</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Aiken-North Augusta</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Charleston</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Columbia</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Florence</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Georgetown</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Greenville</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Greenwood</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Hilton Head</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Myrtle Beach</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Seneca</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Spartanburg</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Sumter</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Tennessee</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Chattanooga</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Jackson</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Knoxville</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Memphis</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Texas</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Galveston</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Houston</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Virginia</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Albemarle</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Charlottesville</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Lynchburg</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Northern Virgina</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Richmond</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Roanoke</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Virginia Beach-Norfolk-Newport News</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>Washington</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Spokane</p></div>
+      <div class="label break-inside-avoid pt-[30px] font-bold break-inside-avoid-page text-[0.75rem] uppercase"><p>West Virginia</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Morgantown</p></div>
+      <div class="text-[14px] break-inside-avoid break-inside-avoid-page pt-[8px]"><p >Parkersburg</p></div>
+  </div>
+  <div class="pb-14 border-t-2 border-white mt-10">
+    <div class="flex flex-col mt-6 lg:flex-row gap-10 justify-center items-center font-bold lg:justify-between text-[10px]">
+      <div class="flex gap-4 lg:gap-7 flex-wrap min-[576px]:flex-nowrap justify-center">
+          <a class="hover:text-gray-200" href="#">Accessibility</a>
+          <a class="hover:text-gray-200" href="#">Terms of Service</a>
+          <a class="hover:text-gray-200" href="#">Privacy Policy</a>
+          <a class="hover:text-gray-200" href="#">DMCA Notice</a>
+          <a class="hover:text-gray-200" href="#">Sitemap</a>
+      </div>
+      <div class="">
+        <p class="">© Copyright 2024 EZ Home Search. All Rights Reserved.</p>
+      </div>
+    </div>
   </div>
 </div>

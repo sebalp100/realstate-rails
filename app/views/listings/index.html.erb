@@ -14,6 +14,8 @@
     <p class="lg:w-[48vw] lg:pt-5 leading-6 text-[0.875rem]">The heart of downtown is swimming with exciting nightlife, world-famous attractions, and historic landmarks; the surrounding neighborhoods offer unique, local businesses that reflect the individual character of each area. In the midst of all the urban city activities, Atlanta real estate is also surrounded by a variety of parks, gardens, and green spaces. When it comes to <span class="text-[#01576E] underline">Georgia Real Estate</span> in an active city, it doesn’t get more vibrant than Atlanta.</p>
   </div>
 
+  <span class="flex w-[85vw] h-[2px] bg-gray-200 z-10 -mb-[40px] mt-[20px]"></span>
+
   <%= render 'layouts/search', class: "relative z-10" %>
 
   <div class="flex justify-between items-center w-full px-[8vw] pb-5 pt-5">
@@ -25,7 +27,7 @@
     </div>
   </div>
 
-  <div class="grid grid-cols-3 gap-5 mx-[8vw]">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-[8vw]">
     <% @listings.each do |listing| %>
       <div class="flex flex-col">
         <div class="relative">
@@ -63,40 +65,40 @@
     <p> Atlanta </p>
   </span>
 
-  <div class="bg-[#262936] h-80 w-[83vw] px-[4vw] mb-[5.25rem] flex gap-[1.25rem] justify-evenla items-center text-[#86B6B9]">
-    <div class="w-[21vw] leading-8">
-      <h5 class="text-white text-[1.2rem] font-bold pb-5">Nearby Real Estate</h5>
-      <div>
-        <p>Open Houses</p>
-        <p>Land for Sale Near Me</p>
-        <p>Townhomes for Sale Near Me</p>
+  <div class="bg-[#262936] w-[83vw] px-[4vw] py-[60px] mb-[5.25rem] grid grid-cols-1 min-[502px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[1.25rem] justify-center items-center text-[#86B6B9]">
+    <div class="lg:w-[21vw] leading-8">
+      <h5 class="text-white lg:text-[1.2rem] font-bold pb-5">Nearby Real Estate</h5>
+      <div class="text-[0.8rem] lg:text-base">
+        <p class="lg:mb-2">Open Houses</p>
+        <p class="lg:mb-2">Land for Sale Near Me</p>
+        <p class="lg:mb-2">Townhomes for Sale Near Me</p>
         <p class="font-bold">See All</p>
       </div>
     </div>
-    <div class="w-[21vw] leading-8">
-      <h5 class="text-white text-[1.2rem] font-bold pb-5">Nearby Zip Codes</h5>
-      <div>
-        <p>31198</p>
-        <p>30314</p>
-        <p>31191</p>
+    <div class="lg:w-[21vw] leading-8">
+      <h5 class="text-white lg:text-[1.2rem] font-bold pb-5">Nearby Zip Codes</h5>
+      <div class="text-[0.8rem] lg:text-base">
+        <p class="lg:mb-2">31198</p>
+        <p class="lg:mb-2">30314</p>
+        <p class="lg:mb-2">31191</p>
         <p class="font-bold">See All</p>
       </div>
     </div>
-    <div class="w-[21vw] leading-8">
-      <h5 class="text-white text-[1.2rem] font-bold pb-5">Atlanta Neighborhoods</h5>
-      <div>
-        <p>Bankhead</p>
-        <p>Vine City</p>
-        <p>Atlanta University Center</p>
+    <div class="lg:w-[21vw] leading-8">
+      <h5 class="text-white lg:text-[1.2rem] font-bold pb-5">Atlanta Neighborhoods</h5>
+      <div class="text-[0.8rem] lg:text-base">
+        <p class="lg:mb-2">Bankhead</p>
+        <p class="lg:mb-2">Vine City</p>
+        <p class="lg:mb-2">Atlanta University Center</p>
         <p class="font-bold">See All</p>
       </div>
     </div>
-    <div>
-      <h5 class="text-white text-[1.2rem] font-bold pb-5">Atlanta Property Types</h5>
-      <div class="w-[21vw] leading-8">
-        <p>For Sale by Owner (FSBO)</p>
-        <p>Single Family Homes</p>
-        <p>Condos</p>
+    <div class="lg:w-[21vw] leading-8">
+      <h5 class="text-white lg:text-[1.2rem] font-bold pb-5">Atlanta Property Types</h5>
+      <div class="text-[0.8rem] lg:text-base">
+        <p class="lg:mb-2">For Sale by Owner (FSBO)</p>
+        <p class="lg:mb-2">Single Family Homes</p>
+        <p class="lg:mb-2">Condos</p>
         <p class="font-bold">See All</p>
       </div>
     </div>
