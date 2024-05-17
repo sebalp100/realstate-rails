@@ -1,0 +1,47 @@
+<div class="pt-20 pb-10 relative z-10 xl:w-[67.4vw] font-inter">
+  <%= form_tag("/", method: "get", class: "flex flex-col items-center justify-center") do %>
+    <div class="flex flex-col sm:flex-row sm:px-[3vw] sm:flex-wrap min-[950px]:flex-nowrap sm:gap-10 xl:gap-2 min-[950px]:flex-row justify-center xl:space-x-3">
+      <div>
+        <div class="flex justify-between">
+          <%= label_tag(:search, "SEARCH", class: "block text-sm font-medium text-gray-700") %>
+          <div class="flex justify-between gap-2">
+            <%= image_tag 'bullseye.svg', alt: 'Near me icon', class: "w-4" %>
+            <p class="text-[#01576E] font-medium text-sm">NEAR ME</p>
+          </div>
+        </div>
+        <%= text_field_tag(:search, nil, placeholder: "Search Address, city, zip code, or area...", class: "sm:w-[150px] sm:w-[476px] min-[950px]:w-[300px] xl:w-[430px] mt-1 border border-[#01576E] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
+      </div>
+
+      <div>
+        <%= label_tag(:beds, "BEDS", class: "pt-5 sm:pt-0 lg:pt-0 block text-sm font-medium text-gray-700") %>
+        <%= select_tag(:beds, options_for_select(['Any', '1', '2']), class: "py-2 pr-14 w-[40vw] min-[950px]:w-auto pl-5 mt-1 border border-[#01576E] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
+      </div>
+
+      <div>
+        <%= label_tag(:baths, "BATHS", class: "block text-sm pt-5 sm:pt-0 lg:pt-0 font-medium text-gray-700") %>
+        <%= select_tag(:baths, options_for_select(['Any', '1', '2']), class: "py-2 pr-14 pl-5 mt-1 w-[40vw] min-[950px]:w-auto border border-[#01576E] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
+      </div>
+
+      <div>
+        <%= label_tag(:min_price, "MIN PRICE", class: "block text-sm pt-5 sm:pt-0 lg:pt-0 font-medium text-gray-700") %>
+        <%= text_field_tag(:min_price, nil, placeholder: "Min", class: "mt-1 w-32 border border-[#01576E] w-[40vw] min-[950px]:w-[110px] xl:max-w-[170px] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
+      </div>
+
+      <div>
+        <%= label_tag(:max_price, "MAX PRICE", class: "block text-sm pt-5 sm:pt-0 lg:pt-0 font-medium text-gray-700") %>
+        <%= text_field_tag(:max_price, nil, placeholder: "Max", class: "mt-1 w-32 border border-[#01576E] w-[40vw] min-[950px]:w-[110px] xl:max-w-[170px] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
+      </div>
+    </div>
+      
+    <div class="pt-6 min-[950px]:self-end min-[950px]:pr-[3vw] xl:pr-4">
+      <div class="flex flex-col items-center justify-center md:flex-row gap-5">
+      <div class="flex gap-5">
+        <p class=" underline mt-2 text-[#01576E] text-sm leading-loose">Advanced Search</p>
+        <p class=" underline mt-2 text-sm leading-loose">Save Search</p>
+      </div>  
+        <%= submit_tag("SEARCH", class: "py-[6px] font-medium px-10 bg-[#01576E] text-white rounded-sm") %>
+      </div> 
+    </div>
+  <% end %>
+</div>
+
