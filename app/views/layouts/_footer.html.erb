@@ -1,22 +1,23 @@
-<div class="w-full bg-[#86B6B9] font-inter flex flex-col justify-center items-center">
-  <div class="flex min-[576px]:max-w-[980px] min-[1500px]:max-w-[1100px] gap-20 lg:gap-4 justify-center flex-wrap lg:flex-nowrap columns-2 lg:columns-3 pt-14">
+<div class="w-full bg-[#86B6B9] flex justify-center">
+<div class="sm:px-[10vw] xl:!max-w-[1420px] min-[576px]:max-w-[1280px] font-inter flex flex-col justify-center items-center">
+  <div class="flex  gap-20 lg:!gap-2 justify-center flex-wrap lg:flex-nowrap columns-2 lg:columns-3 pt-14">
     <div class="w-[16.6%] pr-[70px]">
       <%= image_tag 'logo-footer2.svg', alt: 'EZ Home logo', class: "max-w-[106px]" %>
     </div>
-    <div class="flex flex-col mr-[10px] w-[50%] sm:w-[60%] basis-auto">
-      <h2 class="text-[44px] leading-10 text-white max-w-460px font-medium pb-10">A better way to discover real state</h2>
+    <div class="flex flex-col mr-[10px] w-[50%] sm:w-[60%]">
+      <h2 class="xl:text-[44px] text-[37px] -mt-3 leading-snug text-white max-w-460px font-medium pb-10">A better way to discover real state</h2>
       <div class="flex flex-wrap sm:flex-nowrap gap-4 pb-6">
-        <p>Find a Home</p>
-        <p>Sell</p>
-        <p>Where to Live</p>
-        <p>Neighborhoods</p>
+        <p class="hover:text-white cursor-pointer">Find a Home</p>
+        <p class="hover:text-white cursor-pointer">Sell</p>
+        <p class="hover:text-white cursor-pointer">Where to Live</p>
+        <p class="hover:text-white cursor-pointer">Neighborhoods</p>
       </div>
       <div class="flex flex-wrap sm:flex-nowrap gap-5 text-[0.72rem] min-[1520px]:text-[0.8rem] pb-6">
-        <p>Blog</p>
-        <p>Favorites</p>
-        <p>Saved Searches</p>
-        <p>Login</p>
-        <p>About EZ Home Search</p>
+        <p class="hover:text-white cursor-pointer">Blog</p>
+        <p class="hover:text-white cursor-pointer">Favorites</p>
+        <p class="hover:text-white cursor-pointer">Saved Searches</p>
+        <p class="hover:text-white cursor-pointer">Login</p>
+        <p class="hover:text-white cursor-pointer">About EZ Home Search</p>
       </div>
     </div>
     <div class="flex flex-col text-lg w-[81%] lg:w-[50%] lg:pl-[60px] basis-auto">
@@ -29,13 +30,13 @@
           <%= image_tag 'insta.png', alt: 'Instagram logo', class: "w-6 h-6" %>
           <%= image_tag 'linked.png', alt: 'Linkedin logo', class: "w-6 h-6" %>
         </div>
-        <div>
+        <div class="lg:pr-4">
           <%= image_tag 'eho-realtor.webp', alt: 'Realtor logo', class: "w-28" %>
         </div>
       </div>
     </div>
   </div>
-  <div class="lg:ml-[16.6%] border-t-2 border-white mx-4 mt-10">
+  <div class="lg:ml-[16.6%] border-t-2 border-white mx-4 lg:mx-1 mt-10">
     <h4 class="text-xl font-bold pb-4 pt-10">Locations</h4>
     <div class="columns-1 min-[576px]:columns-2 md:columns-3 xl:columns-4 underline">
       <div class="label break-inside-avoid font-bold text-[0.75rem] uppercase">
@@ -194,4 +195,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>
