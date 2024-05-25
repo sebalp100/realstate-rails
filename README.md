@@ -6,3 +6,5 @@ Simple website made with Rails 7.1 and Ruby 3.2.2. It was made following the nex
 - Everything on the page can be static except for the listings, those should be database driven.
 
 Tested in Chrome 124.0 and Firefox 126.0. 
+
+Deploy link: https://realstate-rails.onrender.com/
