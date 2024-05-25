@@ -80,3 +80,4 @@ gem "tailwindcss-rails", "~> 2.6"
 gem 'searchkick'
 gem 'elasticsearch', '~> 7.13'
 gem 'will_paginate'
+gem 'faker'
