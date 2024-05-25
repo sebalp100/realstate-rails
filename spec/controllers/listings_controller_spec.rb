@@ -12,6 +12,19 @@ RSpec.describe ListingsController, type: :controller do
       end
     end
 
+    context "with search query present" do
+      it "returns http success" do
+        get :index, params: { search: "address 123" }
+        expect(response).to have_http_status(:success)
+      end
+
+      it "correct filtered results" do
+        filtered_listings = create_list(:listing, 5, address: "address 123")
+        get :index, params: { search: "address 123" }
+        expect(assigns(:listings)).to match_array(filtered_listings)
+      end
+    end
+
     context "when there is an error" do
       before do
         allow(Listing).to receive(:all).and_raise(StandardError.new("Something went wrong"))

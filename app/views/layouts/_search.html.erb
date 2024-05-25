@@ -9,27 +9,27 @@
             <p class="text-[#01576E] font-medium text-sm">NEAR ME</p>
           </div>
         </div>
-        <%= text_field_tag(:search, nil, placeholder: "Search Address, city, zip code, or area...", class: "py-[11px] w-full mt-1 border border-[#01576E] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
+        <%= text_field_tag(:search, params[:search], placeholder: "Search Address, city, zip code, or area...", class: "py-[11px] w-full mt-1 border border-[#01576E] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
       </div>
 
       <div class="xl:w-[13%]">
         <%= label_tag(:beds, "BEDS", class: "pt-5 sm:pt-0 lg:pt-0 block text-sm font-medium text-gray-700") %>
-        <%= select_tag(:beds, options_for_select(['Any', '1', '2']), class: "py-[11px] xl:flex-2 w-full pr-14 md:flex-1 pl-5 mt-1 border border-[#01576E] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
+        <%= select_tag(:beds, options_for_select(['Any', '1', '2'], params[:beds]), class: "py-[11px] xl:flex-2 w-full pr-14 md:flex-1 pl-5 mt-1 border border-[#01576E] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
       </div>
 
       <div class="xl:w-[13%]">
         <%= label_tag(:baths, "BATHS", class: "block text-sm pt-5 sm:pt-0 lg:pt-0 font-medium text-gray-700") %>
-        <%= select_tag(:baths, options_for_select(['Any', '1', '2']), class: "py-[11px] xl:flex-2 w-full pr-14 pl-5 mt-1 md:flex-1 border border-[#01576E] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
+        <%= select_tag(:baths, options_for_select(['Any', '1', '2'], params[:baths]), class: "py-[11px] xl:flex-2 w-full pr-14 pl-5 mt-1 md:flex-1 border border-[#01576E] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
       </div>
 
       <div class="xl:w-[13%]">
         <%= label_tag(:min_price, "MIN PRICE", class: "block text-sm pt-5 sm:pt-0 lg:pt-0 font-medium text-gray-700") %>
-        <%= text_field_tag(:min_price, nil, placeholder: "Min", class: "mt-1 py-[11px] w-full border border-[#01576E] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
+        <%= text_field_tag(:min_price, params[:min_price], placeholder: "Min", class: "mt-1 py-[11px] w-full border border-[#01576E] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
       </div>
 
       <div class="xl:w-[13%]">
         <%= label_tag(:max_price, "MAX PRICE", class: "block text-sm pt-5 sm:pt-0 lg:pt-0 font-medium text-gray-700") %>
-        <%= text_field_tag(:max_price, nil, placeholder: "Max", class: "mt-1  py-[11px] w-full border border-[#01576E] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
+        <%= text_field_tag(:max_price, params[:max_price], placeholder: "Max", class: "mt-1  py-[11px] w-full border border-[#01576E] shadow-sm focus:ring-[#01576E] focus:border-[#01576E] sm:text-sm") %>
       </div>
     </div>
       
@@ -39,7 +39,7 @@
         <p class=" underline mt-2 text-[#01576E] text-sm leading-loose">Advanced Search</p>
         <p class=" underline mt-2 text-sm leading-loose">Save Search</p>
       </div>  
-        <%= submit_tag("SEARCH", class: "py-[6px] font-medium px-10 bg-[#01576E] text-white rounded-sm") %>
+        <%= submit_tag("SEARCH", class: "py-[6px] font-medium px-10 bg-[#01576E] cursor-pointer text-white rounded-sm") %>
       </div> 
     </div>
   <% end %>
