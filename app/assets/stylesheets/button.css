@@ -1,0 +1,23 @@
+.current {
+  background-color: #789195;
+  font-style: normal;
+  color: white;
+}
+
+.digg_pagination {
+}
+
+.digg_pagination a,
+.digg_pagination .current {
+  font-weight: 500;
+  padding: 5px 12px;
+}
+
+.next_page,
+.previous_page {
+  text-transform: uppercase;
+}
+
+.disabled {
+  padding: 0 5px;
+}

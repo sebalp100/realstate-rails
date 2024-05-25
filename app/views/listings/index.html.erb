@@ -21,7 +21,7 @@
   <%= render 'layouts/search', class: "relative z-10" %>
 
   <div class="flex flex-col md:flex-row justify-between items-center w-full px-[8vw] pb-5 pt-5">
-    <p class="bg-[#262A39] px-5 py-1 rounded-md text-white"><span class="font-bold"><%= @listings.length %></span> Available Listings</p>
+    <p class="bg-[#262A39] px-5 py-1 rounded-md text-white"><span class="font-bold"><%= @listings.total_entries %></span> Available Listings</p>
     <div class="mt-4 md:mt-0 w-full flex justify-center items-center gap-2 md:block md:w-auto">
       <button class="bg-[#01576E] text-white text-[0.6rem] md:text-[0.8125rem] py-[6px] px-6 rounded-sm">SAVE SEARCH</button>
       <button class="border-2 text-[#01576E] text-[0.6rem] md:text-[0.8125rem] border-[#01576E] font-bold py-[4px] rounded-sm px-3">SHARE</button>
@@ -50,11 +50,8 @@
     <% end %>
   </div>
 
-  <div class="pt-10 pb-10 font-medium">
-    <button class="bg-[#789195] text-white px-3 py-[5px]">1</button>
-    <button class=" px-3 py-[5px]">2</button>
-    <button class=" px-3 py-[5px]">3</button>
-    <button class=" px-3 py-[5px]">NEXT</button>
+  <div class="digg_pagination pt-10 pb-10">
+    <%= will_paginate @posts, container: false %>
   </div>
 
   <span class="h-[0.35rem] w-[83vw] bg-[#97B9BC] mb-10"></span>

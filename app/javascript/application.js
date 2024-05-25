@@ -2,7 +2,7 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('turbo:load', () => {
   const toggleButton = document.getElementById('toggleButton');
   const overlay = document.getElementById('overlay');
   const mobileMenu = document.getElementById('mobileMenu');
